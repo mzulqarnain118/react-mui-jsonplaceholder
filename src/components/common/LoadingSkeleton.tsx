@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Card, CardContent, Skeleton, Grid } from "@mui/material";
+import { Box, Card, CardContent, Skeleton } from "@mui/material";
 import { UI_CONFIG, LAYOUT } from "../../constants";
 import { skeletonAnimation } from "../../utils/animations";
 

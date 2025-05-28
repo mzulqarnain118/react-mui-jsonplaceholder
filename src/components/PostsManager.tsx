@@ -2,7 +2,7 @@
 
 import type React from "react";
 import { useEffect, useState, useMemo } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Box,
   Container,
@@ -16,7 +16,6 @@ import {
   Card,
   CardContent,
   CardActions,
-  Grid,
   Chip,
   IconButton,
   Paper,
@@ -31,10 +30,8 @@ import {
   ToggleButtonGroup,
   InputAdornment,
   Fab,
-  Alert,
   Fade,
   Grow,
-  Slide,
 } from "@mui/material";
 import {
   Add as AddIcon,
@@ -92,8 +89,6 @@ export const PostsManager: React.FC = () => {
   // React Query hooks
   const { data: posts = [], isLoading, error, refetch } = usePosts();
   const deletePostMutation = useDeletePost();
-
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetchUsers();
